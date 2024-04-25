@@ -48,11 +48,28 @@ form {
 h3,h4,h5 {
     font-size: 25px;
 }
-
-.succesfull, .unsuccesfull{
+p{
+    font-size: 18px;
+}
+.succesfull{
     display: none;
     transition: 0.5s all linear;
 }
-.yordamchi{
+.unsuccesfull{
+    display: none;
+    transition: 0.5s all linear;
+}
 
+
+.yordamchi {
+        animation: 1s ease-in-out infinite alternate swingViewport;
+    }
+
+@keyframes swingViewport {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(20vw - 50%));
+    }
 }

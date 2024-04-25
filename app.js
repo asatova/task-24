@@ -38,9 +38,12 @@ function agefocus() {
 }
 submit.addEventListener("click", function (){
 succesfull.style.display = "block";
+unsuccesfull.style.display = "none";
 succesfull.classList.toggle("yordamchi");
 })
 cancel.addEventListener("click", function (){
     unsuccesfull.style.display = "block";
+    succesfull.style.display = "none";
     unsuccesfull.classList.toggle("yordamchi");
+
 })
